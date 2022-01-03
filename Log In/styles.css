@@ -1,0 +1,151 @@
+/*Fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/*variables*/
+:root{    
+    --color-red: hsl(0, 100%, 74%) ;
+    --color-green: hsl(154, 59%, 51%);
+    --color-blue: hsl(248, 32%, 49%);
+    --color-dark-blue: hsl(249, 10%, 26%);
+    --color-grayish-blue: hsl(246, 25%, 77%);
+    --border-inp: hsl(246, 25%, 77%);
+}
+/*root*/
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: var(--color-red);
+    background-image: url(./images/bg-intro-desktop.png);
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+.colum1 {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+   
+    flex-direction: column;
+    padding-left: 160px;
+}
+.title{
+    color: white;
+    font-size:20px;
+}
+.text{
+    color: white;
+}
+.colum2{
+
+   display: grid;
+   padding-left: 50px;
+   padding-right: 50px;
+}
+.boxlet{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    margin-top: 100px;
+    width: 540px;
+     background-color: var(--color-blue);
+     height: 40px;
+     font-size: 16px;
+   margin-bottom: 20px;
+   border-radius: 5px;
+   outline: none;
+   border: none;
+   box-shadow: -1px 8px 10px -3px rgba(0, 0, 0, 0.5);
+   cursor: pointer;
+     color: white;
+     padding: 25px;
+}
+.boxlet p{
+ 
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+}
+.card{
+
+  
+    border-radius: 15px;
+   background-color: white;
+   width: 540px;
+   height:500px;
+   box-shadow: -1px 8px 10px -3px rgba(0, 0, 0, 0.5);
+  
+}
+.input{
+    
+ outline: 0;
+ border: 1;
+ box-sizing: border-box;
+    margin: 14px;
+    width: 450px;
+    height: 50px;
+   
+}
+
+
+
+.cardtext{
+    padding: 27px;
+
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 11px;
+  
+    
+
+   
+}
+.btn1{
+    cursor: pointer;
+    outline: 0;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 450px;
+    height: 50px;
+    background-color: var(--color-green);
+    color: white;
+
+
+}
+ button:hover{
+    opacity: 0.6;
+}
+.p{
+    font-size: 12px;
+  
+  
+}
+.p span{
+    color: var(--color-red);
+    cursor: pointer;
+    text-decoration: none;
+}
+.error_icon {
+    display: none;
+    position: absolute;
+    top: 23px;
+    right: 10px;
+}
+.show {
+    display: initial;
+}
+
+
+
+
+}
